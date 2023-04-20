@@ -1,0 +1,15 @@
+Co dělá tento SQL dotaz
+SELECT p.pack_id, t.test_date
+FROM Packs p
+JOIN Tests t ON t.pack_id = p.pack_id
+
+Odpověď:
+
+Tento SQL dotaz vybírá data ze dvou tabulek, Packs a Tests, pomocí JOIN.
+Konkrétně vybírá sloupce pack_id z tabulky Packs a test_date z tabulky Tests.
+
+Podrobněji řečeno, JOIN kombinuje řádky z obou tabulek na základě podmínky t.pack_id = p.pack_id.
+To znamená, že výsledné řádky budou obsahovat pack_id a odpovídající test_date pro každý pack_id.
+
+Celkově tento dotaz vybere pack_id a příslušné test_date z těch řádků, ve kterých jsou tyto informace obsaženy
+v obou tabulkách
